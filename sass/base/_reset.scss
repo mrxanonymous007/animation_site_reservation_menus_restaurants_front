@@ -1,0 +1,24 @@
+// Généralités
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+}
+
+h2, h4, h5, h6, p, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h3 {
+    font-family: 'Shrikhand', cursive;
+}
+
+a {
+    color: inherit;
+}

@@ -1,9 +1,8 @@
-@import "./base/resets";
-@import "./components/buttons";
-@import "./layouts/footer";
+@import "./base/reset";
+@import "./utils/variable";
+@import "./utils/mixin";
+@import "./utils/function";
 @import "./layouts/header";
+@import "./layouts/footer";
 @import "./pages/home";
-@import "./pages/menus";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/variables";
+@import "./pages/menu";

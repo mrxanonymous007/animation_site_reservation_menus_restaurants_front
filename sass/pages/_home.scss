@@ -1,0 +1,47 @@
+main {
+
+    padding-top: 50px;
+
+    // Barre de recherche
+    .border--input {
+        width: 100%;
+        height: 50px;
+        display: inline-flex;
+        justify-content: center;
+        background: $searchbar-colour;
+        align-items: center;
+        
+        :focus {
+            outline: none;
+        }
+    
+        .border__icon {
+            font-size: 20px;
+            @include padding-margin;
+        }
+    
+        .border__text {
+            border: none;
+            background: none;
+            text-align: center;
+            font-size: 15px;
+            @include padding-margin;
+        }
+    }
+
+    section {
+        text-align: center;
+        padding: 20px;
+        background: $bg-colour;
+
+        p {
+            margin-top: 15px;
+        }
+
+        button {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            @include button-colour;         
+        }
+    }
+}
