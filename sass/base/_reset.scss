@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
 }
 
-h2, h4, h5, h6, p, a {
+h2, h4, h5, h6, p, a, span {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -21,4 +21,8 @@ h1, h3 {
 
 a {
     color: inherit;
+}
+
+main {
+    padding-top: 50px;
 }

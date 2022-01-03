@@ -10,7 +10,7 @@ body {
   min-height: 100vh;
 }
 
-h2, h4, h5, h6, p, a {
+h2, h4, h5, h6, p, a, span {
   font-family: "Roboto", sans-serif;
 }
 
@@ -20,6 +20,10 @@ h1, h3 {
 
 a {
   color: inherit;
+}
+
+main {
+  padding-top: 50px;
 }
 
 header {
@@ -37,10 +41,7 @@ header h1 {
   display: inline-flex;
 }
 
-main {
-  padding-top: 50px;
-}
-main .border--input {
+.border--input {
   width: 100%;
   height: 50px;
   display: inline-flex;
@@ -48,15 +49,15 @@ main .border--input {
   background: #d9d9d9;
   align-items: center;
 }
-main .border--input :focus {
+.border--input :focus {
   outline: none;
 }
-main .border--input .border__icon {
+.border--input .border__icon {
   font-size: 20px;
   margin: 0;
   padding: 0;
 }
-main .border--input .border__text {
+.border--input .border__text {
   border: none;
   background: none;
   text-align: center;
@@ -64,23 +65,24 @@ main .border--input .border__text {
   margin: 0;
   padding: 0;
 }
-main .resume {
+
+.resume {
   flex: 1;
   text-align: center;
-  padding: 20px 20px 40px 20px;
+  padding: 20px 20px 60px 20px;
   background: #f2f2f2;
 }
-main .resume h2 {
+.resume h2 {
   margin: 15px 0;
 }
-main .resume p {
-  margin-bottom: 30px;
+.resume p {
+  margin-bottom: 40px;
 }
-main .resume__btn--explore {
+.resume__btn--explore {
   background: #ff79da;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: white;
-  padding: 15px;
+  padding: 15px 20px;
   font-weight: bold;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
@@ -88,23 +90,92 @@ main .resume__btn--explore {
   border-radius: 30px;
   border: none;
   cursor: pointer;
-  margin: 20px 0;
 }
-main .btn-section {
-  padding: 20px;
+
+.btn-section {
+  padding: 30px 20px;
 }
-main .btn-section__button {
-  text-align: center;
-  margin: 10px 0 10px 13px;
-}
-main .btn-section button {
-  width: 100%;
-  margin: 15px 0;
-  padding: 20px;
+.btn-section__button--number {
   border-radius: 15px;
-  background: #f2f2f2;
+  padding: 2px 7px 2px 7px;
+  float: left;
+  background: #9356DC;
+  color: white;
+  font-size: 15px;
+  margin-left: -25px;
+  margin-top: -2px;
+}
+.btn-section button {
   border: none;
-  font-weight: 400;
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.btn-section button i {
+  margin-right: 10px;
+}
+.btn-section button:hover {
+  background: #f19af1;
+}
+.btn-section button:hover i {
+  color: #9356DC;
+}
+
+.bg-menus {
+  background: #eee;
+  margin: 30px 0;
+  padding: 50px 20px;
+}
+
+.big-class {
+  border: 3px solid black;
+  margin: 20px 0;
+  display: inline-flex;
+  width: 100%;
+}
+.big-class .first-2 {
+  border: 1px solid red;
+  width: 100%;
+}
+.big-class .card {
+  background: white;
+  border: 1px solid orange;
+  height: 250px;
+  border-radius: 15px;
+  margin: 20px;
+}
+.big-class .card .card-text {
+  border: 1px solid black;
+  background-image: url(/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.big-class .card .card-info {
+  height: 50px;
+  border: 1px solid purple;
+}
+.big-class .card .card-info i {
+  float: right;
+  margin-top: 12px;
+  color: orange;
+}
+.big-class .stickers-new {
+  background: #99E2D0;
+  color: #34a186;
+  padding: 5px 8px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  float: right;
+  border-radius: 2px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
