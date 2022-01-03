@@ -29,19 +29,47 @@ main {
         }
     }
 
-    section {
+    .resume {
+        flex: 1;
         text-align: center;
-        padding: 20px;
+        padding: 20px 20px 40px 20px;
         background: $bg-colour;
 
+        h2 {
+           margin: 15px 0;
+        }
+
         p {
-            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        &__btn--explore {
+            @include button-colour
+        } 
+    }
+
+    .btn-section {
+        padding: 20px;
+
+        &__button {
+            text-align: center;
+            margin: 10px 0 10px 13px;
         }
 
         button {
-            margin-top: 20px;
-            margin-bottom: 10px;
-            @include button-colour;         
+            width: 100%;
+            margin: 15px 0;
+            padding: 20px;
+            border-radius: 15px;
+            background: $bg-colour;
+            border: none;
+            font-weight: 400;
+
+            .fa-store {
+                
+            }
         }
+
     }
+    
 }
