@@ -34,6 +34,14 @@
     }
 }
 
+@mixin button-transparent {
+
+}
+
+@mixin light-colour ($color: $colour-primary) {
+    background: lighten($color, 30%)
+}
+
 @mixin padding-margin {
     margin: 0;
     padding: 0;
