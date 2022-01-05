@@ -25,6 +25,13 @@
     border-radius: 30px;
     border: none;
     cursor: pointer;
+
+    // Ombrage arrière
+    &:hover {
+        box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    }
 }
 
 @mixin padding-margin {

@@ -25,6 +25,9 @@
     }
 }
 
+
+
+// Résumé du site + bouton
 .resume {
     flex: 1;
     text-align: center;
@@ -44,109 +47,14 @@
     } 
 }
 
+
+
+// Fonctionnement
+
+// <i class="fas fa-mobile-alt"></i>
+// <i class="fas fa-list-ul"></i>
+// <i class="fas fa-store"></i>
+
 .btn-section {
-    padding: 30px 20px;
-
-    &__button {
-        // text-align: center;
-
-        &--number {
-            border-radius: 15px;
-            padding: 2px 7px 2px 7px;
-            float: left;
-            background: $colour-primary;
-            color: white;
-            font-size: 15px;
-            margin-left: -25px;
-            margin-top: -2px;
-            
-        }
-    }
-
-    button {
-        border: none;
-        padding: 15px;
-        border-radius: 15px;
-        width: 100%;
-        margin-top: 20px;
-        font-size: 15px;
-        cursor: pointer;
-
-        i {
-            margin-right: 10px;
-        }
-
-        &:hover {
-            background: rgb(241, 154, 241);
-
-            i {
-                color: $colour-primary;
-            }
-        }
-    }
-}
-
-.bg-menus {
-    background: #eee;
-    margin: 30px 0;
-    padding: 50px 20px;
-}
-
-.big-class {
-    border: 3px solid black;
-    margin: 20px 0;
-    display: inline-flex;
-    width: 100%;
-
-    .first-2 {
-        border: 1px solid red;
-        width: 100%;
-    }
-
-    .card {
-        background: white;
-        border: 1px solid orange;
-        height: 250px;
-        border-radius: 15px;
-        margin: 20px;
-
-        .card-text {
-            border: 1px solid black;
-            background-image: url(/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-            height: 200px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            border-radius: 15px 15px 0 0;
-        }
-
-        .card-info {
-            height: 50px;
-            border: 1px solid purple;
-            
-            i {
-                float: right;
-                margin-top: 12px;
-                color: orange;
-
-                &:hover {
-                   
-                }
-            }
-        }
-
-        
-    }
-    .stickers-new {
-        background: $colour-tertiary;
-        color: #34a186;
-        padding: 5px 8px;
-        margin-top: 10px;
-        margin-right: 10px;
-        font-size: 12px;
-        float: right;
-        border-radius: 2px;
-        font-weight: bold;
-    }
+    padding: 20px;
 }
