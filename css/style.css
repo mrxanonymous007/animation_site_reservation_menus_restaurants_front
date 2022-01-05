@@ -41,7 +41,7 @@ header h1 {
   display: inline-flex;
 }
 
-.border--input {
+.border__input {
   width: 100%;
   height: 50px;
   display: inline-flex;
@@ -49,15 +49,15 @@ header h1 {
   background: #d9d9d9;
   align-items: center;
 }
-.border--input :focus {
+.border__input :focus {
   outline: none;
 }
-.border--input .border__icon {
+.border__input--icon {
   font-size: 20px;
   margin: 0;
   padding: 0;
 }
-.border--input .border__text {
+.border__input--text {
   border: none;
   background: none;
   text-align: center;
@@ -65,9 +65,12 @@ header h1 {
   margin: 0;
   padding: 0;
 }
+.border__input--text::placeholder {
+  color: #666666;
+}
 
 .resume {
-  flex: 1;
+  width: 100%;
   text-align: center;
   padding: 20px 20px 60px 20px;
   background: #f2f2f2;
@@ -99,48 +102,46 @@ header h1 {
 
 .btn-section {
   padding: 20px;
-  border: 1px solid black;
 }
 
-.border-1 {
-  border: 1px solid black;
+.button {
+  width: 100%;
   display: flex;
-  margin: 20px 0;
-  padding: 15px 0;
-  border-radius: 15px;
+  margin: 25px 0;
+  padding: 20px 0;
   font-size: 14px;
+  border-radius: 15px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   background: #f2f2f2;
   align-items: center;
 }
-.border-1:hover {
-  background: #e4d5f6;
+.button:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
 }
-.border-1:hover .icon {
+.button:hover {
+  background: #e4d5f6;
+}
+.button:hover .icon {
   color: #9356DC;
 }
 
 .border-stickers {
-  border: 1px solid maroon;
   width: 1%;
 }
-
-.stickers {
+.border-stickers .stickers {
   border: 1px solid green;
   margin-left: -10px;
   border-radius: 15px;
-  padding: 0 5px;
+  padding: 2px 6px;
   color: white;
   background: #9356DC;
 }
 
-.border-2 {
-  border: 1px solid orange;
+.border-icontxt {
   width: 99%;
   text-align: center;
 }
@@ -148,17 +149,21 @@ header h1 {
 .icontxt {
   display: inline-flex;
   align-items: center;
-  border: 1px solid blue;
 }
-
-.icon {
-  border: 1px solid black;
-  color: #595959;
+.icontxt .icon {
+  color: #666666;
 }
-
-.texte {
-  border: 1px solid purple;
+.icontxt .txt {
   padding: 0 10px;
+}
+
+.bg-section {
+  width: 100%;
+  background: #f2f2f2;
+  padding: 55px 20px;
+}
+.bg-section .border-1 {
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */
