@@ -28,17 +28,47 @@ main {
 
 header {
   width: 100%;
-  height: 50px;
   top: 0;
   position: fixed;
+  height: 50px;
+  display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   background: #fff;
 }
-header h1 {
-  display: inline-flex;
+
+.arrow-left {
+  font-size: 20px;
+  text-align: left;
+  margin-right: -15px;
+}
+
+.heading-title {
+  width: 90%;
+}
+
+footer {
+  background: #2b2b2b;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.b1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+.b1 .b2 {
+  display: flex;
+}
+.b1 .b2 i {
+  padding-right: 15px;
 }
 
 .border__input {
@@ -243,7 +273,40 @@ header h1 {
   padding: 0 10px;
 }
 .bg-section .border-2 .card .card-info .title-txt {
-  line-height: 20px;
+  line-height: 22px;
+}
+.bg-section .border-2 .card .card-info .title-txt .p-size {
+  font-size: 14.5px;
+}
+.img-height {
+  width: 100%;
+  height: 250px;
+  background-position: center bottom 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+}
+
+.bg-menus {
+  height: 500px;
+  border: 1px solid black;
+  background: #f2f2f2;
+  margin-top: -55px;
+  border-radius: 30px 30px 0 0;
+  padding: 20px 15px;
+}
+
+.bg-menus-first {
+  display: flex;
+  border: 1px solid blue;
+  align-items: center;
+  justify-content: space-between;
+}
+.bg-menus-first .font-size-menus {
+  font-size: 21.5px;
+}
+.bg-menus-first .heart-menus {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

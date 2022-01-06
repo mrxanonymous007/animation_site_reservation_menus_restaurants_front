@@ -1,0 +1,27 @@
+footer {
+   @include light-bg-colour;
+   color: $card-colour;
+    padding: 20px;
+    text-align: center;
+}
+
+.b1 {
+    // border: 1px solid white;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 15px 0;
+
+    .b2 {
+        // border: 1px solid red;
+        display: flex;
+
+        i {
+            padding-right: 15px;
+        }
+    }
+}
+
+.b3 {
+    // border: 1px solid orange;
+}
