@@ -78,7 +78,7 @@
     width: 1%;
 
     .stickers {
-        border: 1px solid green;
+        // border: 1px solid green;
         margin-left: -10px;
         border-radius: 15px;
         padding: 2px 6px;
@@ -113,9 +113,73 @@
 .bg-section {
     width: 100%;
     background: $bg-colour;
-    padding: 55px 20px;
+    padding: 50px 20px;
+    // border: 1px solid black;
 
     .border-1 {
-        border: 1px solid red;
-    } 
+        // border: 1px solid red;
+        margin-top: 20px;
+    }
+
+
+
+
+    .border-2 {
+        // border: 1px solid purple;
+
+        .card {
+            // border: 1px solid green;
+            @include card-bg;
+            
+
+            .card-img1 {
+                // border: 1px solid orange;
+                @include card-img;
+                background-image: url(/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+
+                .stickers-new {
+                    @include stickers-new;
+                }
+            }
+
+            .card-img2 {
+                @include card-img;
+                
+                background-image: url(/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+
+                .stickers-new {
+                    @include stickers-new;
+                }
+            }
+
+            .card-img3 {
+                @include card-img;
+                background-image: url(/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+            }
+
+            .card-img4 {
+                @include card-img;
+                background-image: url(/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+            }
+
+            .card-info {
+                // border: 1px solid blue;
+                height: 50px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 10px;
+
+                .title-txt {
+                    // border: 1px solid burlywood;
+                    line-height: 20px;
+                }
+
+                .icon-gen {
+                    // border: 1px solid rosybrown;
+                }
+            }
+        }
+    }
 }
