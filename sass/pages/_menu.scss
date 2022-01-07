@@ -1,16 +1,27 @@
-.img-height {
+.img-height-1 {
     // border: 1px solid black;
-    width: 100%;
-    height: 250px;
-    background-position: center bottom 40%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    @include menu-img-cover;
     
     background-image: url(/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }
 
+.img-height-2 {
+    @include menu-img-cover;
+    background-image: url(/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+}
+
+.img-height-3 {
+    @include menu-img-cover;
+    background-image: url(/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+}
+
+.img-height-4 {
+    @include menu-img-cover;
+    background-image: url(/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+
 .bg-menus {
-    border: 1px solid black;
+    // border: 1px solid black;
     background: $bg-colour;
     margin-top: -55px;
     border-radius: 30px 30px 0 0;
@@ -19,7 +30,7 @@
 
 .bg-menus-first {
     display: flex;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     align-items: center;
     justify-content: space-between;
 
@@ -33,7 +44,7 @@
 }
 
 .carte-menus {
-    border: 1px solid red;
+    // border: 1px solid red;
     padding-top: 20px;
 
     .uppercase-menus {
@@ -47,10 +58,16 @@
         @include button-transparent;
         margin-top: 10px;
         padding: 10px;
+        @include xl-btn-colour;
+
+        &:hover {
+            @include xl-btn-colour-hover;
+        }
 
         .inside-menus {
-            border: 1px solid black;
+            // border: 1px solid black;
             width: 100%;
+            line-height: 18px;
         }
     }
 
@@ -59,7 +76,7 @@
     }
 
     .menu-details {
-        border: 1px solid blue;
+        // border: 1px solid blue;
         display: flex;
         justify-content: space-between;
 

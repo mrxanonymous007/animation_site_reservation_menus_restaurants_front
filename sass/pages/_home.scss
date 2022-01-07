@@ -61,8 +61,8 @@
 
 .button {
     @include button-transparent;
-    background: $bg-colour;
     align-items: center;
+    background: $bg-colour;
 
     &:hover {
         @include light-colour;
@@ -109,6 +109,9 @@
         padding: 0 10px;
     }
 }
+
+
+// Restaurants
 
 .bg-section {
     width: 100%;
