@@ -155,8 +155,8 @@ footer {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-  align-items: center;
   background: #f2f2f2;
+  align-items: center;
 }
 .button:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
@@ -177,7 +177,7 @@ footer {
   margin-left: -10px;
   border-radius: 15px;
   padding: 2px 6px;
-  color: white;
+  color: #fff;
   background: #9356DC;
 }
 
@@ -349,16 +349,16 @@ footer {
   font-size: 20px;
 }
 
-.carte-menus {
+.menus-card {
   padding-top: 20px;
 }
-.carte-menus .uppercase-menus {
+.menus-card .uppercase-menus {
   text-transform: uppercase;
   font-size: 13.5px;
   border-bottom: 3px solid #99E2D0;
   width: 32px;
 }
-.carte-menus .button-menus {
+.menus-card .button-menus {
   display: flex;
   margin: 25px 0;
   padding: 20px 0;
@@ -367,30 +367,30 @@ footer {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  background: #f7f7f7;
   margin-top: 10px;
   padding: 10px;
-  background: #f7f7f7;
 }
-.carte-menus .button-menus:hover {
+.menus-card .button-menus:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
 }
-.carte-menus .button-menus:hover {
+.menus-card .button-menus:hover {
   background: white;
 }
-.carte-menus .button-menus .inside-menus {
+.menus-card .button-menus .inside-menus {
   width: 100%;
   line-height: 18px;
 }
-.carte-menus .reduct-mt {
+.menus-card .reduct-mt {
   margin-top: -10px;
 }
-.carte-menus .menu-details {
+.menus-card .menu-details {
   display: flex;
   justify-content: space-between;
 }
-.carte-menus .menu-details .price-menus {
+.menus-card .menu-details .price-menus {
   font-weight: bold;
 }
 
@@ -412,6 +412,7 @@ footer {
   cursor: pointer;
   font-size: 15px;
   width: 200px;
+  cursor: pointer;
 }
 .ordered-button button:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);

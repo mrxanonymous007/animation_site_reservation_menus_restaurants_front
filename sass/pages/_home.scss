@@ -4,7 +4,7 @@
     height: 50px;
     display: inline-flex;
     justify-content: center;
-    background: $searchbar-colour;
+    @include gray-colour;
     align-items: center;
     
     :focus {
@@ -34,7 +34,7 @@
     width: 100%;
     text-align: center;
     padding: 20px 20px 60px 20px;
-    background: $bg-colour;
+    @include light-gray-colour;
 
     h2 {
         margin: 15px 0;
@@ -45,7 +45,7 @@
     }
 
     &__btn--explore {
-        @include button-colour
+        @include button-colour;
     } 
 }
 
@@ -59,8 +59,8 @@
 
 .button {
     @include button-transparent;
+    @include light-gray-colour;
     align-items: center;
-    background: $bg-colour;
 
     &:hover {
         @include light-colour;
@@ -78,7 +78,7 @@
         margin-left: -10px;
         border-radius: 15px;
         padding: 2px 6px;
-        color: white;
+        color: $colour-light;
         background: $colour-primary;
     }
 }
@@ -110,7 +110,7 @@
 
 .bg-section {
     width: 100%;
-    background: $bg-colour;
+    @include light-gray-colour;
     padding: 55px 20px;
 
     .section-border1 {

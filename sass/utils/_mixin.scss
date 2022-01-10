@@ -2,7 +2,7 @@
 @mixin button-colour {
     background: rgb(255,121,218);
     background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-    color: $card-colour;
+    color: $colour-light;
     padding: 15px 25px;
     font-weight: bold;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
@@ -52,6 +52,11 @@
     color: lighten($color, 40%);
 }
 
+// Couleur noire (85% claire)
+@mixin gray-colour ($color: $colour-shadow) {
+    background: lighten($color, 85%);
+}
+
 // Couleur noire (97% claire)
 @mixin xl-btn-colour ($color: $colour-shadow) {
     background: lighten($color, 97%);;
@@ -65,6 +70,10 @@
 // Couleur noire (17% claire)
 @mixin light-bg-colour ($color: $colour-shadow) {
     background: lighten($color, 17%);
+}
+
+@mixin light-gray-colour ($color: $colour-shadow) {
+    background: lighten($color, 95%);
 }
 
 
