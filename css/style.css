@@ -31,13 +31,13 @@ main {
     text-align: left;
     padding-bottom: 10px;
   }
-  footer .b1 {
+  footer .footer-section {
     display: block;
     justify-content: start;
     text-align: left;
     padding: 0;
   }
-  footer .b3 {
+  footer .footer-info-noicon {
     display: flex;
   }
 }
@@ -56,8 +56,9 @@ header {
   background: #fff;
 }
 header .arrow-left {
+  width: 15px;
   font-size: 20px;
-  text-align: left;
+  text-align: right;
 }
 header .heading-title {
   width: 80%;
@@ -70,17 +71,18 @@ footer {
   text-align: center;
 }
 
-.b1 {
+.footer-section {
   display: flex;
   width: 100%;
   justify-content: space-around;
   padding: 15px 0;
   line-height: 25px;
 }
-.b1 .b2 {
+.footer-section .footer-info {
   display: flex;
+  align-items: center;
 }
-.b1 .b2 i {
+.footer-section .footer-info i {
   padding-right: 15px;
   width: 30px;
 }
@@ -98,16 +100,12 @@ footer {
 }
 .border__input--icon {
   font-size: 20px;
-  margin: 0;
-  padding: 0;
 }
 .border__input--text {
   border: none;
   background: none;
   text-align: center;
   font-size: 15px;
-  margin: 0;
-  padding: 0;
 }
 .border__input--text::placeholder {
   color: #666666;
@@ -207,10 +205,10 @@ footer {
   background: #f2f2f2;
   padding: 55px 20px;
 }
-.bg-section .border-1 {
+.bg-section .section-border1 {
   margin-top: 20px;
 }
-.bg-section .border-2 .card {
+.bg-section .section-border2 .card {
   height: 200px;
   background: #f7f7f7;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
@@ -219,13 +217,13 @@ footer {
   border-radius: 10px;
   width: 100%;
 }
-.bg-section .border-2 .card:hover {
+.bg-section .section-border2 .card:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   background: white;
 }
-.bg-section .border-2 .card .card-img1 {
+.bg-section .section-border2 .card .card-img1 {
   border-radius: 10px 10px 0 0;
   height: 150px;
   width: 100%;
@@ -234,7 +232,7 @@ footer {
   background-position: center;
   background-image: url(/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }
-.bg-section .border-2 .card .card-img1 .stickers-new {
+.bg-section .section-border2 .card .card-img1 .stickers-new {
   background: #99E2D0;
   color: #278870;
   font-size: 13px;
@@ -244,7 +242,7 @@ footer {
   margin-top: 10px;
   border-radius: 1.5px;
 }
-.bg-section .border-2 .card .card-img2 {
+.bg-section .section-border2 .card .card-img2 {
   border-radius: 10px 10px 0 0;
   height: 150px;
   width: 100%;
@@ -253,7 +251,7 @@ footer {
   background-position: center;
   background-image: url(/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
 }
-.bg-section .border-2 .card .card-img2 .stickers-new {
+.bg-section .section-border2 .card .card-img2 .stickers-new {
   background: #99E2D0;
   color: #278870;
   font-size: 13px;
@@ -263,7 +261,7 @@ footer {
   margin-top: 10px;
   border-radius: 1.5px;
 }
-.bg-section .border-2 .card .card-img3 {
+.bg-section .section-border2 .card .card-img3 {
   border-radius: 10px 10px 0 0;
   height: 150px;
   width: 100%;
@@ -272,7 +270,7 @@ footer {
   background-position: center;
   background-image: url(/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
 }
-.bg-section .border-2 .card .card-img4 {
+.bg-section .section-border2 .card .card-img4 {
   border-radius: 10px 10px 0 0;
   height: 150px;
   width: 100%;
@@ -281,7 +279,7 @@ footer {
   background-position: center;
   background-image: url(/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
 }
-.bg-section .border-2 .card .card-info {
+.bg-section .section-border2 .card .card-info {
   height: 50px;
   width: 100%;
   display: flex;
@@ -289,12 +287,13 @@ footer {
   justify-content: space-between;
   padding: 0 10px;
 }
-.bg-section .border-2 .card .card-info .title-txt {
+.bg-section .section-border2 .card .card-info .title-txt {
   line-height: 22px;
 }
-.bg-section .border-2 .card .card-info .title-txt .p-size {
+.bg-section .section-border2 .card .card-info .title-txt .p-size {
   font-size: 14.5px;
 }
+
 .img-height-1 {
   width: 100%;
   height: 250px;

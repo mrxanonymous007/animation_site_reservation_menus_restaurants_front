@@ -1,4 +1,4 @@
-// Boutons
+// Bouton de couleur rose et violet
 @mixin button-colour {
     background: rgb(255,121,218);
     background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
@@ -19,9 +19,8 @@
     }
 }
 
+// Bouton de couleur blanche
 @mixin button-transparent {
-    // border: 1px solid black;
-    // width: 100%;
     display: flex;
     margin: 25px 0;
     padding: 20px 0;
@@ -38,30 +37,38 @@
     }
 }
 
+// Couleur mauve (30% claire)
 @mixin light-colour ($color: $colour-primary) {
     background: lighten($color, 30%);
 }
 
+// Couleur verte (40% foncée)
 @mixin shadow-colour ($color: $colour-tertiary) {
     color: darken($color, 40%);
 }
 
+// Couleur noire (40% claire)
 @mixin light-icon-colour ($color: $colour-shadow) {
     color: lighten($color, 40%);
 }
 
+// Couleur noire (97% claire)
 @mixin xl-btn-colour ($color: $colour-shadow) {
     background: lighten($color, 97%);;
 }
 
+// Couleur noire (100% claire)
 @mixin xl-btn-colour-hover ($color: $colour-shadow) {
     background: lighten($color, 100%);
 }
 
+// Couleur noire (17% claire)
 @mixin light-bg-colour ($color: $colour-shadow) {
     background: lighten($color, 17%);
 }
 
+
+// Taille des cartes (index: restaurants)
 @mixin card-bg {
     height: 200px;
     @include xl-btn-colour;
@@ -79,6 +86,7 @@
         }
 }
 
+// Taille des images (index: restaurants)
 @mixin card-img {
     border-radius: 10px 10px 0 0;
     height: 150px;
@@ -88,6 +96,8 @@
     background-position: center;
 }
 
+
+// Autocollant "nouveau"
 @mixin stickers-new {
     background: $colour-tertiary;
     @include shadow-colour;
@@ -99,11 +109,8 @@
     border-radius: 1.5px;
 }
 
-@mixin padding-margin {
-    margin: 0;
-    padding: 0;
-}
 
+// Image (page1-4) en arrière-plan
 @mixin menu-img-cover {
     width: 100%;
     height: 250px;

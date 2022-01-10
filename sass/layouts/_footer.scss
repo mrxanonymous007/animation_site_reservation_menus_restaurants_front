@@ -1,29 +1,24 @@
 footer {
    @include light-bg-colour;
-    color: $card-colour;
+    color: $colour-light;
     padding: 20px;
     text-align: center;
 }
 
-.b1 {
-    // border: 1px solid white;
+.footer-section {
     display: flex;
     width: 100%;
     justify-content: space-around;
     padding: 15px 0;
     line-height: 25px;
 
-    .b2 {
-        // border: 1px solid red;
+    .footer-info {
         display: flex;
+        align-items: center;
 
         i {
             padding-right: 15px;
             width: 30px;
         }
     }
-}
-
-.b3 {
-    // border: 1px solid orange;
 }
