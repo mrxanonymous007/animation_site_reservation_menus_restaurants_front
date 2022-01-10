@@ -26,6 +26,21 @@ main {
   padding-top: 50px;
 }
 
+@media (max-width: 768px) {
+  footer .footer-phone {
+    text-align: left;
+    padding-bottom: 10px;
+  }
+  footer .b1 {
+    display: block;
+    justify-content: start;
+    text-align: left;
+    padding: 0;
+  }
+  footer .b3 {
+    display: flex;
+  }
+}
 header {
   width: 100%;
   top: 0;
@@ -40,14 +55,12 @@ header {
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   background: #fff;
 }
-
-.arrow-left {
+header .arrow-left {
   font-size: 20px;
   text-align: left;
 }
-
-.heading-title {
-  width: 90%;
+header .heading-title {
+  width: 80%;
 }
 
 footer {
@@ -62,12 +75,14 @@ footer {
   width: 100%;
   justify-content: space-around;
   padding: 15px 0;
+  line-height: 25px;
 }
 .b1 .b2 {
   display: flex;
 }
 .b1 .b2 i {
   padding-right: 15px;
+  width: 30px;
 }
 
 .border__input {
@@ -114,7 +129,7 @@ footer {
   background: #ff79da;
   background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
   color: #fff;
-  padding: 15px 20px;
+  padding: 15px 25px;
   font-weight: bold;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
@@ -134,7 +149,6 @@ footer {
 }
 
 .button {
-  width: 100%;
   display: flex;
   margin: 25px 0;
   padding: 20px 0;
@@ -180,9 +194,12 @@ footer {
 }
 .icontxt .icon {
   color: #666666;
+  text-align: left;
 }
 .icontxt .txt {
-  padding: 0 10px;
+  padding-left: 15px;
+  text-align: left;
+  width: 190px;
 }
 
 .bg-section {
@@ -343,7 +360,6 @@ footer {
   width: 32px;
 }
 .carte-menus .button-menus {
-  width: 100%;
   display: flex;
   margin: 25px 0;
   padding: 20px 0;
@@ -377,6 +393,31 @@ footer {
 }
 .carte-menus .menu-details .price-menus {
   font-weight: bold;
+}
+
+.ordered-button {
+  text-align: center;
+  margin: 50px 0 25px 0;
+}
+.ordered-button button {
+  background: #ff79da;
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+  color: #fff;
+  padding: 15px 25px;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  width: 200px;
+}
+.ordered-button button:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
 }
 
 /*# sourceMappingURL=style.css.map */

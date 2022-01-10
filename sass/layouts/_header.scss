@@ -11,14 +11,15 @@ header {
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     background: $card-colour;
-}
-.arrow-left {
-    font-size: 20px;
-    text-align: left;
-    // border: 1px solid red;
-}
 
-.heading-title {
-    width: 90%;
-    // border: 1px solid black;
+    .arrow-left {
+        font-size: 20px;
+        text-align: left;
+        // border: 1px solid red;
+    }
+    
+    .heading-title {
+        width: 80%;
+        // border: 1px solid black;
+    }
 }
