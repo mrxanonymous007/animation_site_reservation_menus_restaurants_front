@@ -137,6 +137,8 @@ footer {
   cursor: pointer;
 }
 .resume__btn--explore:hover {
+  background: #ff79da;
+  background: linear-gradient(180deg, rgba(255, 121, 218, 0.9542191877) 0%, rgba(147, 86, 220, 0.95) 100%);
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
@@ -293,6 +295,19 @@ footer {
 .bg-section .section-border2 .card .card-info .title-txt .p-size {
   font-size: 14.5px;
 }
+.bg-section .section-border2 .card .card-info .icon-gen {
+  line-height: 0;
+  font-size: 20px;
+}
+.bg-section .section-border2 .card .card-info .icon-gen .heart-fill {
+  position: absolute;
+  color: transparent;
+}
+.bg-section .section-border2 .card .card-info .icon-gen .heart-fill:hover {
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
 
 .img-height-1 {
   width: 100%;
@@ -415,6 +430,8 @@ footer {
   cursor: pointer;
 }
 .ordered-button button:hover {
+  background: #ff79da;
+  background: linear-gradient(180deg, rgba(255, 121, 218, 0.9542191877) 0%, rgba(147, 86, 220, 0.95) 100%);
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);

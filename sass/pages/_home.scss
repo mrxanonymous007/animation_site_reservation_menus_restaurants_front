@@ -117,9 +117,6 @@
         margin-top: 20px;
     }
 
-
-
-
     .section-border2 {
 
         .card {
@@ -165,9 +162,28 @@
 
                 .title-txt {
                     line-height: 22px;
+                    // border: 1px solid black;
 
                     .p-size {
                         font-size: 14.5px;
+                        // border: 1px solid red;
+                    }
+                }
+
+                .icon-gen {
+                    // border: 1px solid green;
+                    line-height: 0;
+                    font-size: 20px;
+
+                    .heart-fill {
+                        position: absolute;
+                        color: transparent;
+                        
+                        &:hover {
+                            background: -webkit-linear-gradient($colour-secondary, $colour-primary);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                        }
                     }
                 }
             }
