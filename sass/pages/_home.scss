@@ -176,14 +176,17 @@
                     font-size: 20px;
 
                     .heart-fill {
-                        position: absolute;
-                        color: transparent;
-                        
-                        &:hover {
+                            position: absolute;
+                            color: transparent;
                             background: -webkit-linear-gradient($colour-secondary, $colour-primary);
                             background-clip: text;
                             -webkit-background-clip: text;
-                        }
+                            opacity: 0;
+                            transition: all 100ms;
+
+                            &:hover {
+                                opacity: 1;
+                            }
                     }
 
                 }
