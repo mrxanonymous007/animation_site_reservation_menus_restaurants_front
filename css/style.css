@@ -26,6 +26,22 @@ main {
   padding-top: 50px;
 }
 
+@keyframes fa-check-rotation {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+@keyframes fa-check-anticlockwise {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
 @media (max-width: 768px) {
   footer .footer-phone {
     text-align: left;
@@ -54,6 +70,7 @@ header {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   background: #fff;
+  z-index: 1;
 }
 header .arrow-left {
   width: 15px;
@@ -151,14 +168,15 @@ footer {
 .button {
   display: flex;
   margin: 25px 0;
-  padding: 20px 0;
   font-size: 14px;
   border-radius: 15px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
   background: #f2f2f2;
   align-items: center;
+  padding: 20px 0;
 }
 .button:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
@@ -306,7 +324,7 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 100ms;
+  transition: all 300ms;
 }
 .bg-section .section-border2 .card .card-info .icon-gen .heart-fill:hover {
   opacity: 1;
@@ -370,7 +388,7 @@ footer {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  transition: all 100ms;
+  transition: all 300ms;
   cursor: pointer;
 }
 .bg-menus-first .icon-gen .heart-fill:hover {
@@ -395,16 +413,17 @@ footer {
 .menus-card .button-menus {
   display: flex;
   margin: 25px 0;
-  padding: 20px 0;
   font-size: 14px;
   border-radius: 15px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
   background: #f7f7f7;
   margin-top: 10px;
-  padding: 10px;
   align-items: center;
+  overflow: hidden;
+  border: 1px solid blue;
 }
 .menus-card .button-menus:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
@@ -414,15 +433,29 @@ footer {
 .menus-card .button-menus:hover {
   background: white;
 }
-.menus-card .button-menus .font-color-icon {
+.menus-card .button-menus #bg-check-icon {
   background-color: #99E2D0;
+}
+.menus-card .button-menus .font-color-icon {
   color: #fff;
-  font-size: 30px;
+  font-size: 22.5px;
+  padding: 20px;
+  border-radius: 0 15px 15px 0;
+  margin-right: -100px;
+  transition: margin-right 900ms;
+  animation: fa-check-anticlockwise 500ms;
+}
+.menus-card .button-menus:hover .font-color-icon {
+  margin-right: 0;
+}
+.menus-card .button-menus:hover i {
+  animation: fa-check-rotation 900ms;
 }
 .menus-card .button-menus .inside-menus {
   width: 100%;
   line-height: 18px;
   border: 1px solid red;
+  padding: 10px;
 }
 .menus-card .reduct-mt {
   margin-top: -10px;
@@ -432,7 +465,7 @@ footer {
   justify-content: space-between;
   border: 1px solid black;
 }
-.menus-card .menu-details .price-menus {
+.menus-card .price-menus {
   font-weight: bold;
   background: red;
 }

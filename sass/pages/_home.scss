@@ -61,6 +61,7 @@
     @include button-transparent;
     @include light-gray-colour;
     align-items: center;
+    padding: 20px 0;
 
     &:hover {
         @include light-colour;
@@ -171,7 +172,6 @@
                 }
 
                 .icon-gen {
-                    // border: 1px solid green;
                     line-height: 0;
                     font-size: 20px;
 
@@ -182,7 +182,7 @@
                             background-clip: text;
                             -webkit-background-clip: text;
                             opacity: 0;
-                            transition: all 100ms;
+                            transition: all 300ms;
 
                             &:hover {
                                 opacity: 1;

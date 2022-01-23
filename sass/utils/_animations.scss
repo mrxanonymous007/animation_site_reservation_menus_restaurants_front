@@ -1,0 +1,19 @@
+@keyframes fa-check-rotation {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes fa-check-anticlockwise {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}

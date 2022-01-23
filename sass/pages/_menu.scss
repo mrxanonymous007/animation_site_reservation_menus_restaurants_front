@@ -48,7 +48,7 @@
             background-clip: text;
             -webkit-background-clip: text;
             opacity: 0;
-            transition: all 100ms;
+            transition: all 300ms;
             cursor: pointer;
 
             &:hover {
@@ -69,7 +69,7 @@
 // Divisions 3 sections (entrées, plats et desserts)
 .menus-card {
     padding-top: 20px;
-
+    
     .uppercase-menus {
         text-transform: uppercase;
         font-size: 13.5px;
@@ -81,25 +81,56 @@
         @include button-transparent;
         @include xl-btn-colour;
         margin-top: 10px;
-        padding: 10px;
+        // padding: 10px;
         align-items: center;
+        overflow: hidden;
+        border: 1px solid blue;
+        
 
         &:hover {
             @include xl-btn-colour-hover;
         }
 
-        .font-color-icon {
+        #bg-check-icon {
             background-color: $colour-tertiary;
-            color: $colour-light;
-            font-size: 30px;
-            
         }
 
+        .font-color-icon {
+            color: $colour-light;
+            font-size: 22.5px;
+            padding: 20px;
+            border-radius: 0 15px 15px 0;
+            margin-right: -100px;
+            transition: margin-right 900ms;
+            animation: fa-check-anticlockwise 500ms;
+        }
+
+        &:hover {
+            .font-color-icon {         
+                margin-right: 0;
+            }
+
+            i {
+                animation: fa-check-rotation 900ms;
+            }
+        }
+
+        
+        
         .inside-menus {
             width: 100%;
             line-height: 18px;
             border: 1px solid red;
+            padding: 10px;
+            
         }
+
+        // .block-price-check {
+        //     border: 1px solid black;
+        //     display: inline-flex;
+        //     flex: auto;
+        //     overflow: visible;
+        // }
     }
 
     .reduct-mt {
@@ -110,12 +141,12 @@
         display: flex;
         justify-content: space-between;
         border: 1px solid black;
-
-        .price-menus {
-            font-weight: bold;
-            background: red;
-        }
     }
+    .price-menus {
+        font-weight: bold;
+        background: red;
+    }
+    
 }
 
 // Bouton commander
