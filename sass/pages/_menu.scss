@@ -66,6 +66,8 @@
     }
 }
 
+
+
 // Divisions 3 sections (entrées, plats et desserts)
 .menus-card {
     padding-top: 20px;
@@ -77,11 +79,30 @@
         width: 32px;
     }
 
+
+// Délai des animations sur les buttons menus
+    #delay0, #delay3, #delay6 {
+        @include delay0;
+    }
+
+    #delay1, #delay4, #delay7 {
+        @include delay1;
+    }
+
+    #delay2, #delay5, #delay8 {
+        @include delay2;
+    }
+        // 4ème entrées en page 2
+    #delay9 {
+        animation-delay: 0.3s
+    }
+
     .button-menus {
         @include button-transparent;
         @include xl-btn-colour;
         margin-top: 10px;
         overflow: hidden;
+        animation: btn-animations 1s both;
 
         &:hover {
             @include xl-btn-colour-hover;

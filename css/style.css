@@ -42,6 +42,15 @@ main {
     transform: rotate(-360deg);
   }
 }
+@keyframes btn-animations {
+  0% {
+    opacity: 0.1;
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes zoom-in-out {
   0% {
     transform: scale(1);
@@ -446,6 +455,18 @@ footer {
   border-bottom: 3px solid #99E2D0;
   width: 32px;
 }
+.menus-card #delay0, .menus-card #delay3, .menus-card #delay6 {
+  animation-delay: 0s;
+}
+.menus-card #delay1, .menus-card #delay4, .menus-card #delay7 {
+  animation-delay: 0.1s;
+}
+.menus-card #delay2, .menus-card #delay5, .menus-card #delay8 {
+  animation-delay: 0.2s;
+}
+.menus-card #delay9 {
+  animation-delay: 0.3s;
+}
 .menus-card .button-menus {
   display: flex;
   margin: 25px 0;
@@ -458,6 +479,7 @@ footer {
   background: #f7f7f7;
   margin-top: 10px;
   overflow: hidden;
+  animation: btn-animations 1s both;
 }
 .menus-card .button-menus:hover {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);

@@ -134,3 +134,15 @@
 @mixin heart-colour-bg {
     background-color: rgb(255,121,218);
 }
+
+@mixin delay0 {
+    animation-delay: 0s;
+}
+
+@mixin delay1 {
+    animation-delay: 0.1s;
+}
+
+@mixin delay2 {
+    animation-delay: 0.2s;
+}
