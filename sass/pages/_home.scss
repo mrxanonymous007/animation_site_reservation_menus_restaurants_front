@@ -127,6 +127,7 @@
             .card-img1 {
                 @include card-img;
                 background-image: url(/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+                
 
                 .stickers-new {
                     @include stickers-new;
@@ -135,8 +136,8 @@
 
             .card-img2 {
                 @include card-img;
-                
                 background-image: url(/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+                
 
                 .stickers-new {
                     @include stickers-new;
@@ -146,11 +147,13 @@
             .card-img3 {
                 @include card-img;
                 background-image: url(/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+                
             }
 
             .card-img4 {
                 @include card-img;
                 background-image: url(/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+                
             }
 
             .card-info {
@@ -163,7 +166,6 @@
 
                 .title-txt {
                     line-height: 22px;
-                    // border: 1px solid black;
 
                     .p-size {
                         font-size: 14.5px;
