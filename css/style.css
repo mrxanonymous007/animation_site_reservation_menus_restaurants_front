@@ -489,7 +489,16 @@ footer {
 .menus-card .button-menus:hover {
   background: white;
 }
-.menus-card .button-menus #bg-check-icon {
+.menus-card .button-menus #bg-check0,
+.menus-card .button-menus #bg-check1,
+.menus-card .button-menus #bg-check2,
+.menus-card .button-menus #bg-check3,
+.menus-card .button-menus #bg-check4,
+.menus-card .button-menus #bg-check5,
+.menus-card .button-menus #bg-check6,
+.menus-card .button-menus #bg-check7,
+.menus-card .button-menus #bg-check8,
+.menus-card .button-menus #bg-check9 {
   background-color: #99E2D0;
   margin-left: 10px;
 }

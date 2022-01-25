@@ -146,3 +146,8 @@
 @mixin delay2 {
     animation-delay: 0.2s;
 }
+
+@mixin bg-check-icon {
+    background-color: $colour-tertiary;
+    margin-left: 10px;
+}

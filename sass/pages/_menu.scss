@@ -108,9 +108,18 @@
             @include xl-btn-colour-hover;
         }
 
-        #bg-check-icon {
-            background-color: $colour-tertiary;
-            margin-left: 10px;
+        #bg-check0, 
+        #bg-check1, 
+        #bg-check2, 
+        #bg-check3, 
+        #bg-check4, 
+        #bg-check5, 
+        #bg-check6, 
+        #bg-check7, 
+        #bg-check8,
+        #bg-check9
+        {
+            @include bg-check-icon;
         }
 
         .font-color-icon {
