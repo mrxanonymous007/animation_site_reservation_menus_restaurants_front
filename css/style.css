@@ -83,8 +83,12 @@ main {
   transform-origin: center;
 }
 .spinner img {
+  border: 3.5px solid;
+  border-color: #9356DC #FF79DA;
   animation: zoom-in-out 3s;
   width: 50%;
+  border-radius: 100px;
+  padding: 2% 5.3%;
 }
 
 @media (max-width: 768px) {
@@ -198,7 +202,7 @@ footer {
   border: none;
   cursor: pointer;
 }
-.resume__btn--explore:hover {
+.resume__btn--explore:active {
   background: #ff79da;
   background: linear-gradient(180deg, rgba(255, 121, 218, 0.9542191877) 0%, rgba(147, 86, 220, 0.95) 100%);
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
@@ -223,15 +227,15 @@ footer {
   align-items: center;
   padding: 20px 0;
 }
-.button:hover {
+.button:active {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
 }
-.button:hover {
+.button:active {
   background: #e4d5f6;
 }
-.button:hover .icon {
+.button:active .icon {
   color: #9356DC;
 }
 
@@ -282,7 +286,7 @@ footer {
   border-radius: 10px;
   width: 100%;
 }
-.bg-section .section-border2 .card:hover {
+.bg-section .section-border2 .card:active {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
@@ -371,7 +375,7 @@ footer {
   opacity: 0;
   transition: all 300ms;
 }
-.bg-section .section-border2 .card .card-info .icon-gen .heart-fill:hover {
+.bg-section .section-border2 .card .card-info .icon-gen .heart-fill:active {
   opacity: 1;
 }
 
@@ -436,7 +440,7 @@ footer {
   transition: all 300ms;
   cursor: pointer;
 }
-.bg-menus-first .icon-gen .heart-fill:hover {
+.bg-menus-first .icon-gen .heart-fill:active {
   opacity: 1;
 }
 .bg-menus-first .font-size-menus {
@@ -481,12 +485,12 @@ footer {
   overflow: hidden;
   animation: btn-animations 1s both;
 }
-.menus-card .button-menus:hover {
+.menus-card .button-menus:active {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
 }
-.menus-card .button-menus:hover {
+.menus-card .button-menus:active {
   background: white;
 }
 .menus-card .button-menus #bg-check0,
@@ -511,10 +515,10 @@ footer {
   transition: margin-right 900ms;
   animation: fa-check-anticlockwise 500ms;
 }
-.menus-card .button-menus:hover .font-color-icon {
+.menus-card .button-menus:active .font-color-icon {
   margin-right: 0;
 }
-.menus-card .button-menus:hover i {
+.menus-card .button-menus:active i {
   animation: fa-check-rotation 900ms;
 }
 .menus-card .button-menus .inside-menus {
@@ -561,7 +565,7 @@ footer {
   width: 200px;
   cursor: pointer;
 }
-.ordered-button button:hover {
+.ordered-button button:active {
   background: #ff79da;
   background: linear-gradient(180deg, rgba(255, 121, 218, 0.9542191877) 0%, rgba(147, 86, 220, 0.95) 100%);
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);

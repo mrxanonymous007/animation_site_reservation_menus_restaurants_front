@@ -1,3 +1,4 @@
+// lors passage curseur apparition icône check
 @keyframes fa-check-rotation {
 
     0% {
@@ -9,6 +10,7 @@
     }
 }
 
+// lors animation terminée disparation du check en sens inverse lorsqu'on enlève curseur
 @keyframes fa-check-anticlockwise {
 
     0% {
@@ -20,6 +22,8 @@
     }
 }
 
+
+// arrivée progressive des boutons dans le menu
 @keyframes btn-animations {
     0% {
         opacity: .1;
@@ -32,6 +36,7 @@
 }
 
 
+// Loading spinner
 @keyframes zoom-in-out {
 
     0% {
@@ -73,8 +78,13 @@
     animation: spinner-disappear 300ms 2.7s forwards;
     transform-origin: center;
     
+    
     img {
+        border: 3.5px solid;
+        border-color: $colour-primary $colour-secondary;
         animation: zoom-in-out 3s;
         width: 50%;
+        border-radius: 100px;
+        padding: 2% 5.3%;
     }
 }
