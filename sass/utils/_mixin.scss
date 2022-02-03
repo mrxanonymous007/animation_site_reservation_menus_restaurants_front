@@ -12,7 +12,7 @@
     border: none;
     cursor: pointer;
 
-    &:hover {
+    &:hover, &:active {
         background: rgb(255,121,218);
         background: linear-gradient(180deg, rgba(255,121,218,0.9542191876750701) 0%, rgba(147,86,220,0.95) 100%);
         box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
@@ -33,7 +33,7 @@
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
     cursor: pointer;
 
-    &:hover {
+    &:hover, &:active {
         box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
         -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
@@ -90,7 +90,7 @@
     border-radius: 10px;
     width: 100%;
 
-        &:hover {
+        &:hover, &:active {
             box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
             -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
             -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
